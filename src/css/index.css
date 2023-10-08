@@ -8,11 +8,66 @@
   --color-button-green-text: #213557;
 }
 
-h1 {
+* {
+  outline: 1px solid;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding: 8px 20px;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.container-header {
+  display: flex;
+}
+
+.segundo {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+}
+
+.container-logo {
+  display: flex;
+}
+
+.search {
+  display: flex;
+}
+
+.control {
+  display: flex;
+}
+
+.list {
+  display: flex;
+  gap: 10px;
+}
+
+.social-networks {
+  display: flex;
+}
+
+.social {
+  width: 20px;
+}
+
+/* h1 {
   text-align: center;
   color: transparent;
   background-clip: text;
   background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
