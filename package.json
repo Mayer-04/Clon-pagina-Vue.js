@@ -1,0 +1,15 @@
+{
+  "name": "clon-vue.js",
+  "version": "1.0.0",
+  "description": "Recreación de la página web oficial del framework Vue.js.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "servor src --reload --browse"
+  },
+  "keywords": [],
+  "author": "Mayer Andres Chaves Prada",
+  "license": "ISC",
+  "devDependencies": {
+    "servor": "4.0.2"
+  }
+}
