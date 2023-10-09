@@ -9,16 +9,12 @@
   --color-border: #5454547a;
 }
 
-/* * {
-  outline: 2px solid;
-} */
-
 body {
   background-color: var(--color-primary);
   color: var(--color-titles);
 }
 
-.container {
+.page-header {
   background-color: var(--color-primary);
   display: flex;
   align-items: center;
@@ -32,43 +28,30 @@ body {
   z-index: 10;
 }
 
-.container-header {
+.header-content {
   display: flex;
   align-items: center;
   gap: 18px;
 }
 
-.segundo {
-  display: flex;
-  gap: 15px;
-}
-
-.nav {
-  display: flex;
-}
-
-.logo {
+.logo-container {
   display: flex;
   gap: 4px;
 }
+
 .logo-vue {
   cursor: pointer;
 }
-.name-vue {
+
+.logo-text {
   font-size: 0.75rem;
 }
-
-.container-logo {
-  display: flex;
-}
-
 .search {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 6px;
 }
-
 .control {
   display: flex;
   gap: 2px;
@@ -76,8 +59,16 @@ body {
   border-radius: 5px;
   padding: 2px 4px;
 }
+.section-secondary {
+  display: flex;
+  gap: 15px;
+}
 
-.list {
+.container-logo {
+  display: flex;
+}
+
+.menu {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -88,19 +79,17 @@ body {
   gap: 12px;
 }
 
-.social {
+.social-image {
   width: 13px;
   cursor: pointer;
 }
 
-a {
+.menu-link {
+  text-decoration: none;
   color: var(--color-titles);
 }
-nav a {
-  text-decoration: none;
-}
 
-.hero {
+.hero-section {
   padding: 100px 0 80px 0;
   text-align: center;
 }
@@ -118,7 +107,7 @@ nav a {
   margin-bottom: 18px;
 }
 
-.hero-text {
+.hero-description {
   color: var(--color-text);
   margin-bottom: 30px;
 }
@@ -136,17 +125,7 @@ nav a {
   margin-right: 8px;
 }
 
-.started {
-  background-color: var(--color-button-bg);
-  color: var(--color-button-text);
-  text-decoration: none;
-  font-size: 0.75rem;
-  padding: 9px 12px;
-  border-radius: 8px;
-  font-weight: 600;
-  margin-right: 8px;
-}
-
+.started,
 .install {
   background-color: var(--color-button-bg);
   color: var(--color-button-text);
@@ -187,31 +166,31 @@ nav a {
 }
 
 .main {
-  max-width: 960px;
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
-.section-one {
+.features {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
-.article-one h2 {
+.feature-article {
+  padding: 20px;
+}
+
+.feature-article h2 {
   font-size: 0.875rem;
   margin-bottom: 8px;
 }
 
-.article-one p {
+.feature-article p {
   font-size: 0.75rem;
   text-wrap: balance;
-}
-
-.article-one {
-  padding: 20px;
 }
 
 .section-sponsors {
@@ -237,7 +216,7 @@ nav a {
   width: 100px;
 }
 
-.footer {
+.page-footer {
   background-color: var(--color-primary);
   text-align: center;
   font-size: 0.5625rem;

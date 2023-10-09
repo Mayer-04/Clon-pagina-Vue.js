@@ -11,9 +11,9 @@
     <script src="./index.js" defer></script>
   </head>
   <body>
-    <header class="container">
-      <section class="container-header">
-        <div class="logo">
+    <header class="page-header">
+      <section class="header-content">
+        <div class="logo-container">
           <svg
             class="logo-vue"
             viewBox="0 0 128 128"
@@ -32,16 +32,11 @@
               data-v-c0161dce=""
             ></path>
           </svg>
-          <span class="name-vue">Vue.js</span>
+          <span class="logo-text">Vue.js</span>
         </div>
 
         <div class="search">
-          <svg
-            width="12"
-            height="12"
-            class="DocSearch-Search-Icon"
-            viewBox="0 0 20 20"
-          >
+          <svg width="12" height="12" viewBox="0 0 20 20">
             <path
               d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
               stroke="currentColor"
@@ -60,14 +55,14 @@
         </div>
       </section>
 
-      <section class="segundo">
-        <nav class="list">
+      <section class="section-secondary">
+        <nav class="menu">
           <details>
             <summary>Docs</summary>
           </details>
 
-          <a href="#">API</a>
-          <a href="#">Playground</a>
+          <a class="menu-link" href="#">API</a>
+          <a class="menu-link" href="#">Playground</a>
 
           <details>
             <summary>Ecosystem</summary>
@@ -77,32 +72,44 @@
             <summary>About</summary>
           </details>
 
-          <a href="#">Sponsor</a>
-          <a href="#">Partners</a>
+          <a class="menu-link" href="#">Sponsor</a>
+          <a class="menu-link" href="#">Partners</a>
         </nav>
 
         <div class="social-networks">
           <figure>
             <img
-              class="social"
+              class="social-image"
               src="./assets/icons/idioma.svg"
               alt="Icono idioma"
             />
           </figure>
 
-          <img class="social" src="./assets/icons/github.svg" alt="Github" />
-          <img class="social" src="./assets/icons/twitter.svg" alt="Twitter" />
-          <img class="social" src="./assets/icons/discord.svg" alt="Discord" />
+          <img
+            class="social-image"
+            src="./assets/icons/github.svg"
+            alt="Github"
+          />
+          <img
+            class="social-image"
+            src="./assets/icons/twitter.svg"
+            alt="Twitter"
+          />
+          <img
+            class="social-image"
+            src="./assets/icons/discord.svg"
+            alt="Discord"
+          />
         </div>
       </section>
     </header>
 
-    <section class="hero">
+    <section class="hero-section">
       <h1 class="hero-title">
         The Progressive <br />
         JavaScript Framework
       </h1>
-      <p class="hero-text">
+      <p class="hero-description">
         An approachable, performant and versatile framework for building web
         user interfaces.
       </p>
@@ -141,22 +148,22 @@
     </section>
 
     <main class="main">
-      <section class="section-one">
-        <article class="article-one">
+      <section class="features">
+        <article class="feature-article">
           <h2>Approachable</h2>
           <p>
             Builds on top of standard HTML, CSS and JavaScript with intuitive
             API and world-class documentation.
           </p>
         </article>
-        <article class="article-one">
+        <article class="feature-article">
           <h2>Performant</h2>
           <p>
             Truly reactive, compiler-optimized rendering system that rarely
             requires manual optimization.
           </p>
         </article>
-        <article class="article-one">
+        <article class="feature-article">
           <h2>Versatile</h2>
           <p>
             A rich, incrementally adoptable ecosystem that scales between a
@@ -217,7 +224,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="page-footer">
       <p class="license">Released under the <span>MIT License.</span></p>
       <p class="copyright">Copyright © 2014-2023 Evan You</p>
     </footer>
