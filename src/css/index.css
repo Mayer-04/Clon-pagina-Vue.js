@@ -6,25 +6,26 @@
   --color-button-text: #aac8e4;
   --color-button-green-bg: #42b883;
   --color-button-green-text: #213557;
+  --color-border: #5454547a;
 }
+
+/* * {
+  outline: 2px solid;
+} */
 
 body {
   background-color: var(--color-primary);
   color: var(--color-titles);
 }
 
-/* * {
-  outline: 1px solid white;
-} */
-
 .container {
-  background-color: #1a1a1a;
+  background-color: var(--color-primary);
   display: flex;
   align-items: center;
-  font-size: 10px;
+  font-size: 0.625rem;
   padding: 10px 50px;
   justify-content: space-between;
-  border-bottom: 1px solid #5454547a;
+  border-bottom: 1px solid var(--color-border);
   position: fixed;
   top: 0;
   width: 100%;
@@ -50,9 +51,11 @@ body {
   display: flex;
   gap: 4px;
 }
-
 .logo-vue {
-  font-size: 12px;
+  cursor: pointer;
+}
+.name-vue {
+  font-size: 0.75rem;
 }
 
 .container-logo {
@@ -69,7 +72,7 @@ body {
 .control {
   display: flex;
   gap: 2px;
-  border: 1px solid #5454547a;
+  border: 1px solid var(--color-border);
   border-radius: 5px;
   padding: 2px 4px;
 }
@@ -82,11 +85,12 @@ body {
 
 .social-networks {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 .social {
   width: 13px;
+  cursor: pointer;
 }
 
 a {
@@ -97,37 +101,151 @@ nav a {
 }
 
 .hero {
-  padding-top: 100px;
+  padding: 100px 0 80px 0;
   text-align: center;
 }
 
 .hero-title {
-  font-weight: bold;
-  font-size: 55px;
+  font-weight: 900;
+  font-size: 3.4375rem;
   color: transparent;
   background-clip: text;
   background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: -2px;
-  line-height: 70px;
+  line-height: 4.375rem;
+  margin-bottom: 18px;
 }
 
-.hero-button a {
+.hero-text {
+  color: var(--color-text);
+  margin-bottom: 30px;
+}
+
+.why-vue {
   display: inline-block;
-  padding: 4px 8px;
-  border-radius: 10px;
+  font-size: 0.75rem;
+  padding: 6px 12px 6px 30px;
+  border-radius: 8px;
   background-color: var(--color-button-green-bg);
   text-decoration: none;
+  position: relative;
+  color: var(--color-button-green-text);
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.started {
+  background-color: var(--color-button-bg);
+  color: var(--color-button-text);
+  text-decoration: none;
+  font-size: 0.75rem;
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.install {
+  background-color: var(--color-button-bg);
+  color: var(--color-button-text);
+  text-decoration: none;
+  font-size: 0.75rem;
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-right: 8px;
 }
 
 .container-sponsor {
   width: 100%;
-  border-top: 1px solid #5454547a;
-  border-bottom: 1px solid #5454547a;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: 12px 0;
+  font-size: 0.625rem;
 }
 
 .sponsor {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: var(--color-text);
+}
+
+.icon-play {
+  width: 18px;
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  fill: var(--color-button-green-text);
+}
+
+.appwrite {
+  filter: grayscale(1) invert(1);
+}
+
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.article-one h2 {
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+}
+
+.article-one p {
+  font-size: 0.75rem;
+  text-wrap: balance;
+}
+
+.article-one {
+  padding: 20px;
+}
+
+.section-sponsors {
+  padding: 40px 40px;
+}
+
+.title-sponsor {
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
+
+.images-sponsors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  place-items: center;
+}
+
+.image-sponsor {
+  width: 150px;
+}
+
+.image-chrome {
+  width: 100px;
+}
+
+.footer {
+  background-color: var(--color-primary);
+  text-align: center;
+  font-size: 0.5625rem;
+  color: var(--color-text);
+  border-top: 1px solid var(--color-border);
+  padding: 15px 0;
+}
+
+.license > span {
+  color: var(--color-titles);
 }
